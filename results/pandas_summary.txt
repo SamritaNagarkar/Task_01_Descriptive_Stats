@@ -1,0 +1,589 @@
+Structure of the dataset:
+Shape: (246745, 40)
+
+Data Types-
+page_id                                      object
+page_name                                    object
+ad_id                                        object
+ad_creation_time                             object
+ad_delivery_start_time                       object
+ad_delivery_stop_time                        object
+bylines                                      object
+currency                                     object
+estimated_audience_size                      object
+impressions                                  object
+spend                                        object
+publisher_platforms                          object
+illuminating_scored_message                  object
+illuminating_mentions                        object
+illuminating_scam                             int64
+illuminating_election_integrity_Truth         int64
+illuminating_msg_type_advocacy                int64
+illuminating_msg_type_issue                   int64
+illuminating_msg_type_attack                  int64
+illuminating_msg_type_image                   int64
+illuminating_msg_type_cta                     int64
+illuminating_cta_subtype_engagement           int64
+illuminating_cta_subtype_fundraising          int64
+illuminating_cta_subtype_voting               int64
+illuminating_topic_covid                      int64
+illuminating_topic_economy                    int64
+illuminating_topic_education                  int64
+illuminating_topic_environment                int64
+illuminating_topic_foreign_policy             int64
+illuminating_topic_governance                 int64
+illuminating_topic_health                     int64
+illuminating_topic_immigration                int64
+illuminating_topic_lgbtq_issues               int64
+illuminating_topic_military                   int64
+illuminating_topic_race_and_ethnicity         int64
+illuminating_topic_safety                     int64
+illuminating_topic_social_and_cultural        int64
+illuminating_topic_technology_and_privacy     int64
+illuminating_topic_womens_issue               int64
+illuminating_incivility                       int64
+dtype: object
+
+Dataset Info-
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 246745 entries, 0 to 246744
+Data columns (total 40 columns):
+ #   Column                                     Non-Null Count   Dtype 
+---  ------                                     --------------   ----- 
+ 0   page_id                                    246745 non-null  object
+ 1   page_name                                  246745 non-null  object
+ 2   ad_id                                      246745 non-null  object
+ 3   ad_creation_time                           246745 non-null  object
+ 4   ad_delivery_start_time                     246745 non-null  object
+ 5   ad_delivery_stop_time                      244586 non-null  object
+ 6   bylines                                    245736 non-null  object
+ 7   currency                                   246745 non-null  object
+ 8   estimated_audience_size                    246166 non-null  object
+ 9   impressions                                246745 non-null  object
+ 10  spend                                      246745 non-null  object
+ 11  publisher_platforms                        246745 non-null  object
+ 12  illuminating_scored_message                246745 non-null  object
+ 13  illuminating_mentions                      246745 non-null  object
+ 14  illuminating_scam                          246745 non-null  int64 
+ 15  illuminating_election_integrity_Truth      246745 non-null  int64 
+ 16  illuminating_msg_type_advocacy             246745 non-null  int64 
+ 17  illuminating_msg_type_issue                246745 non-null  int64 
+ 18  illuminating_msg_type_attack               246745 non-null  int64 
+ 19  illuminating_msg_type_image                246745 non-null  int64 
+ 20  illuminating_msg_type_cta                  246745 non-null  int64 
+ 21  illuminating_cta_subtype_engagement        246745 non-null  int64 
+ 22  illuminating_cta_subtype_fundraising       246745 non-null  int64 
+ 23  illuminating_cta_subtype_voting            246745 non-null  int64 
+ 24  illuminating_topic_covid                   246745 non-null  int64 
+ 25  illuminating_topic_economy                 246745 non-null  int64 
+ 26  illuminating_topic_education               246745 non-null  int64 
+ 27  illuminating_topic_environment             246745 non-null  int64 
+ 28  illuminating_topic_foreign_policy          246745 non-null  int64 
+ 29  illuminating_topic_governance              246745 non-null  int64 
+ 30  illuminating_topic_health                  246745 non-null  int64 
+ 31  illuminating_topic_immigration             246745 non-null  int64 
+ 32  illuminating_topic_lgbtq_issues            246745 non-null  int64 
+ 33  illuminating_topic_military                246745 non-null  int64 
+ 34  illuminating_topic_race_and_ethnicity      246745 non-null  int64 
+ 35  illuminating_topic_safety                  246745 non-null  int64 
+ 36  illuminating_topic_social_and_cultural     246745 non-null  int64 
+ 37  illuminating_topic_technology_and_privacy  246745 non-null  int64 
+ 38  illuminating_topic_womens_issue            246745 non-null  int64 
+ 39  illuminating_incivility                    246745 non-null  int64 
+dtypes: int64(26), object(14)
+memory usage: 75.3+ MB
+
+
+Stats of numerical columns -
+       illuminating_scam  ...  illuminating_incivility
+count      246745.000000  ...            246745.000000
+mean            0.071633  ...                 0.187526
+std             0.257879  ...                 0.390334
+min             0.000000  ...                 0.000000
+25%             0.000000  ...                 0.000000
+50%             0.000000  ...                 0.000000
+75%             0.000000  ...                 0.000000
+max             1.000000  ...                 1.000000
+
+[8 rows x 26 columns]
+
+Stats of categorical columns -
+                    page_id  ... illuminating_mentions
+count                246745  ...                246745
+unique                 4475  ...                   278
+top     page_id_24413227922  ...                    []
+freq                  55503  ...                 73205
+
+[4 rows x 14 columns]
+
+Missing Values -
+page_id: 0 (0.00%)
+page_name: 0 (0.00%)
+ad_id: 0 (0.00%)
+ad_creation_time: 0 (0.00%)
+ad_delivery_start_time: 0 (0.00%)
+ad_delivery_stop_time: 2159 (0.87%)
+bylines: 1009 (0.41%)
+currency: 0 (0.00%)
+estimated_audience_size: 579 (0.23%)
+impressions: 0 (0.00%)
+spend: 0 (0.00%)
+publisher_platforms: 0 (0.00%)
+illuminating_scored_message: 0 (0.00%)
+illuminating_mentions: 0 (0.00%)
+illuminating_scam: 0 (0.00%)
+illuminating_election_integrity_Truth: 0 (0.00%)
+illuminating_msg_type_advocacy: 0 (0.00%)
+illuminating_msg_type_issue: 0 (0.00%)
+illuminating_msg_type_attack: 0 (0.00%)
+illuminating_msg_type_image: 0 (0.00%)
+illuminating_msg_type_cta: 0 (0.00%)
+illuminating_cta_subtype_engagement: 0 (0.00%)
+illuminating_cta_subtype_fundraising: 0 (0.00%)
+illuminating_cta_subtype_voting: 0 (0.00%)
+illuminating_topic_covid: 0 (0.00%)
+illuminating_topic_economy: 0 (0.00%)
+illuminating_topic_education: 0 (0.00%)
+illuminating_topic_environment: 0 (0.00%)
+illuminating_topic_foreign_policy: 0 (0.00%)
+illuminating_topic_governance: 0 (0.00%)
+illuminating_topic_health: 0 (0.00%)
+illuminating_topic_immigration: 0 (0.00%)
+illuminating_topic_lgbtq_issues: 0 (0.00%)
+illuminating_topic_military: 0 (0.00%)
+illuminating_topic_race_and_ethnicity: 0 (0.00%)
+illuminating_topic_safety: 0 (0.00%)
+illuminating_topic_social_and_cultural: 0 (0.00%)
+illuminating_topic_technology_and_privacy: 0 (0.00%)
+illuminating_topic_womens_issue: 0 (0.00%)
+illuminating_incivility: 0 (0.00%)
+
+
+Column name: page_id
+Type: Categorical
+Unique values: 4475
+Mode: page_id_24413227922 (55503)
+Top 5 values:
+page_id
+page_id_24413227922        55503
+page_id_153080620724       23988
+page_id_7860876103         14822
+page_id_255594894306221    10461
+page_id_167251659804799     9851
+Name: count, dtype: int64
+
+
+Column name: page_name
+Type: Categorical
+Unique values: 4546
+Mode: Kamala Harris (55503)
+Top 5 values:
+page_name
+Kamala Harris       55503
+Donald J. Trump     23988
+Joe Biden           14822
+The Daily Scroll    10461
+Kamala HQ            7564
+Name: count, dtype: int64
+
+
+Column name: ad_id
+Type: Categorical
+Unique values: 246745
+Mode: 0ddb025b8544e2d58e6977ad417e742a52522b3e1fc1c9d9b61c57148f8d72fc (1)
+Top 5 values:
+ad_id
+0ddb025b8544e2d58e6977ad417e742a52522b3e1fc1c9d9b61c57148f8d72fc    1
+329368f2aa4e55f382777eeb9076b6dc15d27129adc7546a6c2366c1294820d9    1
+2c055606917671911ca27cd4a152aea8294c227696bbfc8c7110c979369e7987    1
+827620adb660bd50f856a2953ea6e8346aa9e85183d24b39e5feb66a9827c3cc    1
+2e724cb4530a0da3f5fc6247251056dfe0001390e456d8bfed4af66d9878a009    1
+Name: count, dtype: int64
+
+
+Column name: ad_creation_time
+Type: Categorical
+Unique values: 547
+Mode: 2024-10-27 (8619)
+Top 5 values:
+ad_creation_time
+2024-10-27    8619
+2024-10-28    7356
+2024-10-26    6414
+2024-10-23    5021
+2024-10-25    4769
+Name: count, dtype: int64
+
+
+Column name: ad_delivery_start_time
+Type: Categorical
+Unique values: 558
+Mode: 2024-10-28 (10089)
+Top 5 values:
+ad_delivery_start_time
+2024-10-28    10089
+2024-10-27     7290
+2024-10-26     6793
+2024-10-25     5311
+2024-10-23     4598
+Name: count, dtype: int64
+
+
+Column name: ad_delivery_stop_time
+Type: Categorical
+Unique values: 433
+Mode: 2024-11-05 (14222)
+Top 5 values:
+ad_delivery_stop_time
+2024-11-05    14222
+2024-10-27     5169
+2024-10-26     4282
+2024-10-29     3793
+2024-10-28     3447
+Name: count, dtype: int64
+
+
+Column name: bylines
+Type: Categorical
+Unique values: 3790
+Mode: HARRIS FOR PRESIDENT (49788)
+Top 5 values:
+bylines
+HARRIS FOR PRESIDENT                        49788
+HARRIS VICTORY FUND                         32612
+BIDEN VICTORY FUND                          15539
+DONALD J. TRUMP FOR PRESIDENT 2024, INC.    15112
+Trump National Committee JFC                 7279
+Name: count, dtype: int64
+
+
+Column name: currency
+Type: Categorical
+Unique values: 18
+Mode: USD (246599)
+Top 5 values:
+currency
+USD    246599
+INR        63
+GBP        17
+EUR        11
+PKR         8
+Name: count, dtype: int64
+
+
+Column name: estimated_audience_size
+Type: Categorical
+Unique values: 8
+Mode: {'lower_bound': '1000001'} (100146)
+Top 5 values:
+estimated_audience_size
+{'lower_bound': '1000001'}                             100146
+{'lower_bound': '100001', 'upper_bound': '500000'}      63129
+{'lower_bound': '10001', 'upper_bound': '50000'}        28953
+{'lower_bound': '500001', 'upper_bound': '1000000'}     21144
+{'lower_bound': '50001', 'upper_bound': '100000'}       19089
+Name: count, dtype: int64
+
+
+Column name: impressions
+Type: Categorical
+Unique values: 39
+Mode: {'lower_bound': '0', 'upper_bound': '999'} (80822)
+Top 5 values:
+impressions
+{'lower_bound': '0', 'upper_bound': '999'}          80822
+{'lower_bound': '1000', 'upper_bound': '1999'}      21780
+{'lower_bound': '2000', 'upper_bound': '2999'}      13956
+{'lower_bound': '10000', 'upper_bound': '14999'}    13672
+{'lower_bound': '3000', 'upper_bound': '3999'}       9940
+Name: count, dtype: int64
+
+
+Column name: spend
+Type: Categorical
+Unique values: 44
+Mode: {'lower_bound': '0', 'upper_bound': '99'} (135950)
+Top 5 values:
+spend
+{'lower_bound': '0', 'upper_bound': '99'}         135950
+{'lower_bound': '100', 'upper_bound': '199'}       24593
+{'lower_bound': '200', 'upper_bound': '299'}       13797
+{'lower_bound': '300', 'upper_bound': '399'}        9095
+{'lower_bound': '1000', 'upper_bound': '1499'}      8911
+Name: count, dtype: int64
+
+
+Column name: publisher_platforms
+Type: Categorical
+Unique values: 9
+Mode: ['facebook', 'instagram'] (214434)
+Top 5 values:
+publisher_platforms
+['facebook', 'instagram']                                     214434
+['facebook']                                                   23259
+['instagram']                                                   8395
+['facebook', 'instagram', 'audience_network', 'messenger']       459
+['facebook', 'instagram', 'audience_network']                     79
+Name: count, dtype: int64
+
+
+Column name: illuminating_scored_message
+Type: Categorical
+Unique values: 37338
+Mode: 9b2d5b4678781e53038e91ea5324530a03f27dc1d0e5f6c9bc9d493a23be9de0 (3046)
+Top 5 values:
+illuminating_scored_message
+9b2d5b4678781e53038e91ea5324530a03f27dc1d0e5f6c9bc9d493a23be9de0    3046
+9B2D5B4678781E53038E91EA5324530A03F27DC1D0E5F6C9BC9D493A23BE9DE0    2926
+82459467ad44f717f2089911f5210cce1ff025dc0cee03bdb2e60da827edb282     947
+82459467AD44F717F2089911F5210CCE1FF025DC0CEE03BDB2E60DA827EDB282     940
+3b1d236346df93fd259a23d523f6deeed9b9939158b6f34b11854ea0f97ef35d     683
+Name: count, dtype: int64
+
+
+Column name: illuminating_mentions
+Type: Categorical
+Unique values: 278
+Mode: [] (73205)
+Top 5 values:
+illuminating_mentions
+[]                     73205
+['Donald Trump']       53182
+['Kamala Harris']      31019
+['President Trump']    14580
+['Joe Biden']          14059
+Name: count, dtype: int64
+
+
+Column name: illuminating_scam
+Type: Numeric
+Mean: 0.07163265719670105
+Median: 0.0
+Std Dev: 0.25787921423673715
+Min: 0
+Max: 1
+
+
+Column name: illuminating_election_integrity_Truth
+Type: Numeric
+Mean: 0.05008814768283045
+Median: 0.0
+Std Dev: 0.21812729763387223
+Min: 0
+Max: 1
+
+
+Column name: illuminating_msg_type_advocacy
+Type: Numeric
+Mean: 0.5486311779367363
+Median: 1.0
+Std Dev: 0.497630397126595
+Min: 0
+Max: 1
+
+
+Column name: illuminating_msg_type_issue
+Type: Numeric
+Mean: 0.38164907090315914
+Median: 0.0
+Std Dev: 0.4857921510396574
+Min: 0
+Max: 1
+
+
+Column name: illuminating_msg_type_attack
+Type: Numeric
+Mean: 0.27185555938316885
+Median: 0.0
+Std Dev: 0.4449167522858617
+Min: 0
+Max: 1
+
+
+Column name: illuminating_msg_type_image
+Type: Numeric
+Mean: 0.22270360088350322
+Median: 0.0
+Std Dev: 0.4160617845958501
+Min: 0
+Max: 1
+
+
+Column name: illuminating_msg_type_cta
+Type: Numeric
+Mean: 0.5727694583476869
+Median: 1.0
+Std Dev: 0.494677266171429
+Min: 0
+Max: 1
+
+
+Column name: illuminating_cta_subtype_engagement
+Type: Numeric
+Mean: 0.12486980485926767
+Median: 0.0
+Std Dev: 0.33057189773286044
+Min: 0
+Max: 1
+
+
+Column name: illuminating_cta_subtype_fundraising
+Type: Numeric
+Mean: 0.22848689943058623
+Median: 0.0
+Std Dev: 0.41985872700947896
+Min: 0
+Max: 1
+
+
+Column name: illuminating_cta_subtype_voting
+Type: Numeric
+Mean: 0.1438448600782184
+Median: 0.0
+Std Dev: 0.3509330640202866
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_covid
+Type: Numeric
+Mean: 0.024875884009807697
+Median: 0.0
+Std Dev: 0.1557471435150896
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_economy
+Type: Numeric
+Mean: 0.12212202881517356
+Median: 0.0
+Std Dev: 0.32742735588929806
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_education
+Type: Numeric
+Mean: 0.01432653143934021
+Median: 0.0
+Std Dev: 0.11883324100045269
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_environment
+Type: Numeric
+Mean: 0.02124865752092241
+Median: 0.0
+Std Dev: 0.14421246950528024
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_foreign_policy
+Type: Numeric
+Mean: 0.005264544367667025
+Median: 0.0
+Std Dev: 0.07236608434904696
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_governance
+Type: Numeric
+Mean: 0.025641856977851627
+Median: 0.0
+Std Dev: 0.15806471271184336
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_health
+Type: Numeric
+Mean: 0.10918964923301384
+Median: 0.0
+Std Dev: 0.3118776425730838
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_immigration
+Type: Numeric
+Mean: 0.03356906928205232
+Median: 0.0
+Std Dev: 0.18011751261563122
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_lgbtq_issues
+Type: Numeric
+Mean: 0.0032300553202699142
+Median: 0.0
+Std Dev: 0.05674182858630724
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_military
+Type: Numeric
+Mean: 0.002176335893331172
+Median: 0.0
+Std Dev: 0.04660051777000644
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_race_and_ethnicity
+Type: Numeric
+Mean: 0.01243388923787716
+Median: 0.0
+Std Dev: 0.1108121717210725
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_safety
+Type: Numeric
+Mean: 0.03372307442906645
+Median: 0.0
+Std Dev: 0.18051581854097484
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_social_and_cultural
+Type: Numeric
+Mean: 0.10583801090194331
+Median: 0.0
+Std Dev: 0.30763080127175746
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_technology_and_privacy
+Type: Numeric
+Mean: 0.0011550386026059293
+Median: 0.0
+Std Dev: 0.033966294530661925
+Min: 0
+Max: 1
+
+
+Column name: illuminating_topic_womens_issue
+Type: Numeric
+Mean: 0.08090944092078867
+Median: 0.0
+Std Dev: 0.27269654319120906
+Min: 0
+Max: 1
+
+
+Column name: illuminating_incivility
+Type: Numeric
+Mean: 0.18752558309185596
+Median: 0.0
+Std Dev: 0.3903336473564741
+Min: 0
+Max: 1

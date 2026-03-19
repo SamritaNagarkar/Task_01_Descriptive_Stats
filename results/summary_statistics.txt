@@ -1,0 +1,453 @@
+Overview of the Dataset:
+Total rows: 246745
+Total columns: 40
+
+Type of all columns-
+page_id: categorical
+page_name: categorical
+ad_id: categorical
+ad_creation_time: categorical
+ad_delivery_start_time: categorical
+ad_delivery_stop_time: categorical
+bylines: categorical
+currency: categorical
+estimated_audience_size: categorical
+impressions: categorical
+spend: categorical
+publisher_platforms: categorical
+illuminating_scored_message: categorical
+illuminating_mentions: categorical
+illuminating_scam: numeric
+illuminating_election_integrity_Truth: numeric
+illuminating_msg_type_advocacy: numeric
+illuminating_msg_type_issue: numeric
+illuminating_msg_type_attack: numeric
+illuminating_msg_type_image: numeric
+illuminating_msg_type_cta: numeric
+illuminating_cta_subtype_engagement: numeric
+illuminating_cta_subtype_fundraising: numeric
+illuminating_cta_subtype_voting: numeric
+illuminating_topic_covid: numeric
+illuminating_topic_economy: numeric
+illuminating_topic_education: numeric
+illuminating_topic_environment: numeric
+illuminating_topic_foreign_policy: numeric
+illuminating_topic_governance: numeric
+illuminating_topic_health: numeric
+illuminating_topic_immigration: numeric
+illuminating_topic_lgbtq_issues: numeric
+illuminating_topic_military: numeric
+illuminating_topic_race_and_ethnicity: numeric
+illuminating_topic_safety: numeric
+illuminating_topic_social_and_cultural: numeric
+illuminating_topic_technology_and_privacy: numeric
+illuminating_topic_womens_issue: numeric
+illuminating_incivility: numeric
+
+Missing Values-
+page_id: 0
+page_name: 0
+ad_id: 0
+ad_creation_time: 0
+ad_delivery_start_time: 0
+ad_delivery_stop_time: 2159
+bylines: 1009
+currency: 0
+estimated_audience_size: 579
+impressions: 0
+spend: 0
+publisher_platforms: 0
+illuminating_scored_message: 0
+illuminating_mentions: 0
+illuminating_scam: 0
+illuminating_election_integrity_Truth: 0
+illuminating_msg_type_advocacy: 0
+illuminating_msg_type_issue: 0
+illuminating_msg_type_attack: 0
+illuminating_msg_type_image: 0
+illuminating_msg_type_cta: 0
+illuminating_cta_subtype_engagement: 0
+illuminating_cta_subtype_fundraising: 0
+illuminating_cta_subtype_voting: 0
+illuminating_topic_covid: 0
+illuminating_topic_economy: 0
+illuminating_topic_education: 0
+illuminating_topic_environment: 0
+illuminating_topic_foreign_policy: 0
+illuminating_topic_governance: 0
+illuminating_topic_health: 0
+illuminating_topic_immigration: 0
+illuminating_topic_lgbtq_issues: 0
+illuminating_topic_military: 0
+illuminating_topic_race_and_ethnicity: 0
+illuminating_topic_safety: 0
+illuminating_topic_social_and_cultural: 0
+illuminating_topic_technology_and_privacy: 0
+illuminating_topic_womens_issue: 0
+illuminating_incivility: 0
+
+Stats of numerical columns-
+
+illuminating_scam
+count: 246745
+mean: 0.07163265719670105
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.257878691674285
+
+illuminating_election_integrity_Truth
+count: 246745
+mean: 0.05008814768283045
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.21812685562427525
+
+illuminating_msg_type_advocacy
+count: 246745
+mean: 0.5486311779367363
+min: 0.0
+max: 1.0
+median: 1.0
+std_dev: 0.4976293887347144
+
+illuminating_msg_type_issue
+count: 246745
+mean: 0.38164907090315914
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.48579116663635885
+
+illuminating_msg_type_attack
+count: 246745
+mean: 0.27185555938316885
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.44491585071295586
+
+illuminating_msg_type_image
+count: 246745
+mean: 0.22270360088350322
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.4160609414941812
+
+illuminating_msg_type_cta
+count: 246745
+mean: 0.5727694583476869
+min: 0.0
+max: 1.0
+median: 1.0
+std_dev: 0.4946762637642767
+
+illuminating_cta_subtype_engagement
+count: 246745
+mean: 0.12486980485926767
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.33057122786727233
+
+illuminating_cta_subtype_fundraising
+count: 246745
+mean: 0.22848689943058623
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.4198578762143011
+
+illuminating_cta_subtype_voting
+count: 246745
+mean: 0.1438448600782184
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.35093235289339764
+
+illuminating_topic_covid
+count: 246745
+mean: 0.024875884009807697
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.15574682791164093
+
+illuminating_topic_economy
+count: 246745
+mean: 0.12212202881517356
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.3274266923957781
+
+illuminating_topic_education
+count: 246745
+mean: 0.01432653143934021
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.11883300019884126
+
+illuminating_topic_environment
+count: 246745
+mean: 0.02124865752092241
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.14421217727529445
+
+illuminating_topic_foreign_policy
+count: 246745
+mean: 0.005264544367667025
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.07236593770737645
+
+illuminating_topic_governance
+count: 246745
+mean: 0.025641856977851627
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.15806439241201364
+
+illuminating_topic_health
+count: 246745
+mean: 0.10918964923301384
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.31187701058812467
+
+illuminating_topic_immigration
+count: 246745
+mean: 0.03356906928205232
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.18011714762783995
+
+illuminating_topic_lgbtq_issues
+count: 246745
+mean: 0.0032300553202699142
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.05674171360558219
+
+illuminating_topic_military
+count: 246745
+mean: 0.002176335893331172
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.04660042333939221
+
+illuminating_topic_race_and_ethnicity
+count: 246745
+mean: 0.01243388923787716
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.1108119471731156
+
+illuminating_topic_safety
+count: 246745
+mean: 0.03372307442906645
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.1805154527460685
+
+illuminating_topic_social_and_cultural
+count: 246745
+mean: 0.10583801090194331
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.3076301778926499
+
+illuminating_topic_technology_and_privacy
+count: 246745
+mean: 0.0011550386026059293
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.0339662257019001
+
+illuminating_topic_womens_issue
+count: 246745
+mean: 0.08090944092078867
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.2726959906024914
+
+illuminating_incivility
+count: 246745
+mean: 0.18752558309185596
+min: 0.0
+max: 1.0
+median: 0.0
+std_dev: 0.39033285639043425
+
+Stats of categorical columns-
+
+page_id
+count: 246745
+unique: 4475
+mode: page_id_24413227922 (55503)
+top 5 values:
+  page_id_24413227922: 55503
+  page_id_153080620724: 23988
+  page_id_7860876103: 14822
+  page_id_255594894306221: 10461
+  page_id_167251659804799: 9851
+
+page_name
+count: 246745
+unique: 4546
+mode: Kamala Harris (55503)
+top 5 values:
+  Kamala Harris: 55503
+  Donald J. Trump: 23988
+  Joe Biden: 14822
+  The Daily Scroll: 10461
+  Kamala HQ: 7564
+
+ad_id
+count: 246745
+unique: 246745
+mode: 0ddb025b8544e2d58e6977ad417e742a52522b3e1fc1c9d9b61c57148f8d72fc (1)
+top 5 values:
+  0ddb025b8544e2d58e6977ad417e742a52522b3e1fc1c9d9b61c57148f8d72fc: 1
+  86229868e6bde3661724fe02da93504bb4fb5da8c2550d7b7cf193c687e89fa6: 1
+  07b5aefc27e872e971f793e49aac38496fa62e484f3928e2b6a2b6e3e08cac8d: 1
+  c62978153c04116d88ead49379916855f2cb58bf788631f26f3f1fcb2962ad48: 1
+  785e91ef18a5794565af03a6df4e7077fe1d915bfb34025019f3d42f43fcf9e8: 1
+
+ad_creation_time
+count: 246745
+unique: 547
+mode: 2024-10-27 (8619)
+top 5 values:
+  2024-10-27: 8619
+  2024-10-28: 7356
+  2024-10-26: 6414
+  2024-10-23: 5021
+  2024-10-25: 4769
+
+ad_delivery_start_time
+count: 246745
+unique: 558
+mode: 2024-10-28 (10089)
+top 5 values:
+  2024-10-28: 10089
+  2024-10-27: 7290
+  2024-10-26: 6793
+  2024-10-25: 5311
+  2024-10-23: 4598
+
+ad_delivery_stop_time
+count: 244586
+unique: 433
+mode: 2024-11-05 (14222)
+top 5 values:
+  2024-11-05: 14222
+  2024-10-27: 5169
+  2024-10-26: 4282
+  2024-10-29: 3793
+  2024-10-28: 3447
+
+bylines
+count: 245736
+unique: 3790
+mode: HARRIS FOR PRESIDENT (49788)
+top 5 values:
+  HARRIS FOR PRESIDENT: 49788
+  HARRIS VICTORY FUND: 32612
+  BIDEN VICTORY FUND: 15539
+  DONALD J. TRUMP FOR PRESIDENT 2024, INC.: 15112
+  Trump National Committee JFC: 7279
+
+currency
+count: 246745
+unique: 18
+mode: USD (246599)
+top 5 values:
+  USD: 246599
+  INR: 63
+  GBP: 17
+  EUR: 11
+  PKR: 8
+
+estimated_audience_size
+count: 246166
+unique: 8
+mode: {'lower_bound': '1000001'} (100146)
+top 5 values:
+  {'lower_bound': '1000001'}: 100146
+  {'lower_bound': '100001', 'upper_bound': '500000'}: 63129
+  {'lower_bound': '10001', 'upper_bound': '50000'}: 28953
+  {'lower_bound': '500001', 'upper_bound': '1000000'}: 21144
+  {'lower_bound': '50001', 'upper_bound': '100000'}: 19089
+
+impressions
+count: 246745
+unique: 39
+mode: {'lower_bound': '0', 'upper_bound': '999'} (80822)
+top 5 values:
+  {'lower_bound': '0', 'upper_bound': '999'}: 80822
+  {'lower_bound': '1000', 'upper_bound': '1999'}: 21780
+  {'lower_bound': '2000', 'upper_bound': '2999'}: 13956
+  {'lower_bound': '10000', 'upper_bound': '14999'}: 13672
+  {'lower_bound': '3000', 'upper_bound': '3999'}: 9940
+
+spend
+count: 246745
+unique: 44
+mode: {'lower_bound': '0', 'upper_bound': '99'} (135950)
+top 5 values:
+  {'lower_bound': '0', 'upper_bound': '99'}: 135950
+  {'lower_bound': '100', 'upper_bound': '199'}: 24593
+  {'lower_bound': '200', 'upper_bound': '299'}: 13797
+  {'lower_bound': '300', 'upper_bound': '399'}: 9095
+  {'lower_bound': '1000', 'upper_bound': '1499'}: 8911
+
+publisher_platforms
+count: 246745
+unique: 9
+mode: ['facebook', 'instagram'] (214434)
+top 5 values:
+  ['facebook', 'instagram']: 214434
+  ['facebook']: 23259
+  ['instagram']: 8395
+  ['facebook', 'instagram', 'audience_network', 'messenger']: 459
+  ['facebook', 'instagram', 'audience_network']: 79
+
+illuminating_scored_message
+count: 246745
+unique: 37338
+mode: 9b2d5b4678781e53038e91ea5324530a03f27dc1d0e5f6c9bc9d493a23be9de0 (3046)
+top 5 values:
+  9b2d5b4678781e53038e91ea5324530a03f27dc1d0e5f6c9bc9d493a23be9de0: 3046
+  9B2D5B4678781E53038E91EA5324530A03F27DC1D0E5F6C9BC9D493A23BE9DE0: 2926
+  82459467ad44f717f2089911f5210cce1ff025dc0cee03bdb2e60da827edb282: 947
+  82459467AD44F717F2089911F5210CCE1FF025DC0CEE03BDB2E60DA827EDB282: 940
+  3b1d236346df93fd259a23d523f6deeed9b9939158b6f34b11854ea0f97ef35d: 683
+
+illuminating_mentions
+count: 246745
+unique: 278
+mode: [] (73205)
+top 5 values:
+  []: 73205
+  ['Donald Trump']: 53182
+  ['Kamala Harris']: 31019
+  ['President Trump']: 14580
+  ['Joe Biden']: 14059
