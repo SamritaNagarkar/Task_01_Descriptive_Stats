@@ -9,12 +9,21 @@ The analysis is performed using Python and pandas, with additional visualization
 ---
 
 ## ⚙️ How to Run the Project
+## Dataset
+
+The dataset is not included in this repository.
+
+You can download it from:
+(https://drive.google.com/file/d/1gvtvX8fATFrrzraPmTSf205U8u3JExUR/view?usp=sharing)
+
+After downloading, place the file in the following directory:
+data/fb_ads_president_scored_anon.csv
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/SamritaNagarkar/Task_01_Descriptive_Stats.git
+cd Task_01_Descriptive_Stats
 ```
 
 ---
@@ -139,6 +148,18 @@ Ad volume varies over time and is not evenly distributed. Certain dates show sig
 ```
 
 ---
+
+## Comparison of Approaches
+
+The project was implemented using two approaches: pure Python and pandas.
+
+- The pure Python implementation required manual computation of statistics such as mean, median, and standard deviation, which provided a deeper understanding of the underlying logic.
+- The pandas-based approach significantly reduced code complexity and enabled faster data exploration using built-in functions.
+- Handling large datasets and performing grouped analysis was more efficient and concise with pandas.
+- The pure Python approach offered more control, while pandas improved productivity and readability.
+
+Overall, pandas proved to be more suitable for real-world data analysis tasks, while the pure Python implementation helped build foundational understanding.
+
 
 ## Key Takeaways
 
