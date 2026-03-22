@@ -76,3 +76,28 @@ with open(output_file, "a", encoding="utf-8") as f:
 
 print("Phase 2 complete.")
 print(f"Results saved to: {output_file}")
+
+
+
+# Additional exploratory analysis used for Phase 3 findings
+
+print("\nTop organizations by spend:")
+print(df.groupby("page_name")["spend"].value_counts().head(10))
+
+print("\nSpend distribution:")
+print(df["spend"].describe())
+
+print("\nMentions of illuminating topics:")
+print(df["illuminating_mentions"].value_counts().head(10))
+
+print("\nDate overview:")
+print(df["ad_delivery_start_time"].describe())
+
+print("\nMissing values (top 10 columns):")
+print(df.isnull().sum().sort_values(ascending=False).head(10))
+
+# Topic analysis
+topic_cols = [col for col in df.columns if "illuminating_topic" in col]
+
+print("\nTopic popularity (top 10):")
+print(df[topic_cols].sum().sort_values(ascending=False).head(10))
